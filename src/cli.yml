@@ -1,0 +1,61 @@
+name: Chimera Evolve
+version: "0.1"
+author: David Skelton <d.j.skelton@newcastle.ac.uk>
+about: Optimises a single coding sequence for multiple organisms using the Chimera ARS score
+args:
+  - mutations:
+      short: m
+      long: mutations
+      help: Sets the number of mutation events to carry out per generation
+      takes_value: true
+      default_value: "300"
+
+  - crossovers:
+      short: c
+      long: crossovers
+      help: Sets the number of crossover events to carry out per generation
+      takes_value: true
+      default_value: "100"
+
+  - generations:
+      short: g
+      long: generations
+      help: Sets the number of generations to run the algorithm for
+      takes_value: true
+      default_value: "1000"
+
+  - generation_start:
+      short: s
+      long: gen_start
+      help: Sets the generation start size.
+      takes_value: true
+      default_value: "200"
+
+  - method:
+      short: q
+      long: method
+      help: Method to use to score solutions (weighted, min)
+      takes_value: true
+      default_value: "min"
+
+  - outfile:
+      short: o
+      long: outfile
+      help: Name of the file to which result will be written
+      takes_value: true
+      required: true
+
+  - weights:
+      short: w
+      long: weights
+      help: Comma separated list of weights if weighted method is used
+      takes_value: true
+
+  - protein:
+      help: Sets the protein to optimise a CDS for
+      required: true
+
+  - cds:
+      help: Coding sequences from organisms to optimise for
+      min_values: 1
+      required: true

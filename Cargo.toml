@@ -1,0 +1,15 @@
+[package]
+name = "chimera-evolve"
+version = "0.1.0"
+authors = ["David James Skelton <d.j.skelton@newcastle.ac.uk>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+env_logger = "0.6.1"
+suffix = "1.1.0"
+cute = "0.3.0"
+bio = "0.28.1"
+rayon = "*"
+rand = "0.7.0"
+clap = {version = "2.33", features = ["yaml"]}
