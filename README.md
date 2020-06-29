@@ -38,3 +38,17 @@ This creates an executable appropriate for your system in `chimera_evolve/target
     ARGS:
         <protein>    Sets the protein to optimise a CDS for
         <cds>...     Coding sequences from organisms to optimise for
+        
+<hr>
+
+## Example
+
+The source repository contains some examples to help you get started. To optimise GFP for <i>Bacillus subtilis</i> 168 and <i>Escherichia coli</i> MG1655, after following the steps in the Building section, could be done as follows:
+
+    ./target/release/chimera-evolve \
+        examples/proteins/P42212.fasta \ 
+        examples/cds/bacillus_subtilis_168.fasta \ 
+        examples/cds/escherichia_coli_k12.fasta \
+        --outfile optimised.fasta
+    
+This will produce a file called `optimized.fasta`, which contains the optimised coding sequence and its score.
