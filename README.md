@@ -43,7 +43,8 @@ This creates an executable appropriate for your system in `chimera_evolve/target
 
 ## Example
 
-The source repository contains some examples to help you get started. To optimise GFP for <i>Bacillus subtilis</i> 168 and <i>Escherichia coli</i> MG1655, after following the steps in the Building section, or moving the pre-compined binaries in the `/bin` folder, this could be done as follows:\
+The source repository contains some examples to help you get started. To optimise GFP for <i>Bacillus subtilis</i> 168 and <i>Escherichia coli</i> MG1655, after following the steps in the Building section, or moving the pre-compined binaries in the `/bin` folder, this could be done as follows:
+
     ./chimera-evolve \
         examples/proteins/P42212.fasta \ 
         examples/cds/bacillus_subtilis_168.fasta \ 
